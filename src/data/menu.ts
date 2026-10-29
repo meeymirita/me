@@ -16,15 +16,7 @@ export const menuGroups: MenuGroup[] = [
         title: "IT",
         items: [
             { title: "Обучающая платформа", href: "https://anitech.meeymirita.ru/" },
-        ],
-    },
-    {
-        title: "Материалы по корейскому",
-        items: [
-            { title: "Сегодня", to: "/korean/today", private: true },
-            { title: "Корейский", to: "/korean/words" },
-            { title: "Игра на слова", to: "/game", private: true },
-            { title: "Мой кабинет", to: "/korean/cabinet", private: true },
+            { title: "Корейский", href: "https://korean.meeymirita.ru/" },
         ],
     },
 ];
