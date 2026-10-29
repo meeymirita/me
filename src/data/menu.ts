@@ -19,7 +19,7 @@ export const menuGroups: MenuGroup[] = [
     {
         title: "Корейский",
         items: [
-            { title: "Платформа по корейскому", href: "https://korean.meeymirita.ru/" },
+            { title: "Платформа по Корейскому языку", href: "https://korean.meeymirita.ru/" },
         ],
     },
 ];
