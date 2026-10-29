@@ -14,7 +14,12 @@ export const menuGroups: MenuGroup[] = [
         title: "IT",
         items: [
             { title: "Обучающая платформа", href: "https://anitech.meeymirita.ru/" },
-            { title: "Корейский", href: "https://korean.meeymirita.ru/" },
+        ],
+    },
+    {
+        title: "Корейский",
+        items: [
+            { title: "Платформа по корейскому", href: "https://korean.meeymirita.ru/" },
         ],
     },
 ];
