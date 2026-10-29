@@ -2,8 +2,6 @@ export interface MenuItem {
     title: string
     href?: string
     to?: string
-    /** открывается после входа по токену: пока он не введён, рядом замок */
-    private?: boolean
 }
 
 export interface MenuGroup {

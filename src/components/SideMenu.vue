@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import {RouterLink} from "vue-router";
 import {useMenuStore} from "@/stores/menu.ts";
-import {useProgressStore} from "@/stores/progress.ts";
 
 const groups = useMenuStore().menuGroups;
-const progress = useProgressStore();
 </script>
 
 <template>
@@ -19,7 +17,6 @@ const progress = useProgressStore();
           >
             <span class="line"></span>
             <span>{{ item.title }}</span>
-            <span v-if="item.private && !progress.unlocked" class="lock" title="Откроется после входа по токену">🔒</span>
           </component>
         </li>
       </ul>
