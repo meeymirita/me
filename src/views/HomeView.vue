@@ -37,7 +37,7 @@ const projects = [
       </section>
 
       <section id="projects" class="card projects">
-        <header><img src="/icons/layers.png" alt=""><b>Проекты</b><em>« «</em></header>
+        <header><img src="/icons/layers.png" alt=""><b>Проекты</b><RouterLink class="all" to="/projects">Все проекты <span>→</span></RouterLink></header>
         <div class="plist">
           <component :is="p.href ? 'a' : 'div'" v-for="p in projects" :key="p.t" :href="p.href" target="_blank" class="proj">
             <div class="thumb" :class="p.cls"></div>
@@ -112,7 +112,8 @@ const projects = [
 .stack li img { height:2.8em; width:auto; max-width:4.4em; margin:0 auto .5em; object-fit:contain; }
 
 .projects { height:auto !important; padding-bottom:.8em !important; height:18.9em; padding:1.1em 1.5em; background:rgba(255,246,249,.55); border-radius:1.2em 1.2em 0 0; }
-.projects header em { margin-left:auto; font-style:normal; color:#d6507f; letter-spacing:.2em; margin-right:1em; }
+.projects header .all { margin-left:auto; display:flex; align-items:center; gap:.4em; font-size:.85em; font-weight:600; color:#d6507f; white-space:nowrap; }
+.projects header .all:hover { text-decoration:underline; }
 .plist { display:flex; gap:1.1em; margin-top:1em; }
 .proj { padding:.7em !important; display:block; flex:1; min-width:0; padding:.9em; border-radius:1.2em; background:rgba(255,248,250,.95); box-shadow:0 .6em 1.6em -.9em rgba(120,60,100,.4); color:inherit; }
 .thumb { height:3.4em; border-radius:.8em; }
