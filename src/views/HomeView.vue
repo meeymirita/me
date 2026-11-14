@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SakuraPetals from '@/components/SakuraPetals.vue'
 const stack = [
   ['laravel', 'Laravel'], ['php', 'PHP'], ['rabbitmq', 'RabbitMQ'], ['redis', 'Redis'],
   ['vue', 'Vue.js'], ['typescript', 'TypeScript'], ['nestjs', 'NestJS'],
@@ -18,6 +19,7 @@ const projects = [
   <main class="stage">
     <img class="bg" src="/sakura-bg.webp" alt="">
     <div class="veil"></div>
+    <SakuraPetals />
 
     <div class="layer">
       <div class="jp-l">デベロッパー</div>
@@ -71,7 +73,7 @@ const projects = [
   font-size:var(--u); background:#fbeef2; color:#2a1f2b; }
 .stage .bg { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:16% 0%; }
 .veil { position:absolute; inset:0; background:linear-gradient(90deg, rgba(252,238,243,.95) 0, rgba(252,238,243,.8) 30%, rgba(252,238,243,0) 62%); }
-.layer { position:absolute; inset:0; }
+.layer { position:absolute; inset:0; z-index:1; }
 .layer > * { position:absolute; }
 .left { left:calc(var(--u)*8); top:calc(var(--u)*1.8); width:calc(var(--u)*37.5); display:flex; flex-direction:column; gap:calc(var(--u)*1); }
 .left > * { position:static !important; width:auto; box-sizing:border-box; }

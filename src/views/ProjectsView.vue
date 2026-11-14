@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { repoGroups } from '@/data/repos'
+import SakuraPetals from '@/components/SakuraPetals.vue'
 
 const total = repoGroups.reduce((n, g) => n + g.repos.length, 0)
 </script>
@@ -8,6 +9,7 @@ const total = repoGroups.reduce((n, g) => n + g.repos.length, 0)
   <main class="pj">
     <img class="pj-bg" src="/sakura-bg.webp" alt="">
     <div class="pj-veil"></div>
+    <SakuraPetals />
 
     <div class="pj-wrap">
       <RouterLink class="pj-back" to="/">← На главную</RouterLink>
@@ -41,7 +43,7 @@ const total = repoGroups.reduce((n, g) => n + g.repos.length, 0)
 .pj { position:relative; min-height:100dvh; background:#fbeef2; color:#2a1f2b; font-family:'Manrope',sans-serif; }
 .pj-bg { position:fixed; inset:0; width:100%; height:100%; object-fit:cover; object-position:66% 0; }
 .pj-veil { position:fixed; inset:0; background:rgba(252,238,243,.9); }
-.pj-wrap { position:relative; max-width:960px; margin:0 auto; padding:28px 16px 56px; }
+.pj-wrap { position:relative; z-index:1; max-width:960px; margin:0 auto; padding:28px 16px 56px; }
 .pj-back { display:inline-block; font-size:14px; font-weight:600; color:#a43a65; }
 h1 { margin:14px 0 0; font-family:'Cormorant Garamond',serif; font-style:italic; font-weight:700; font-size:clamp(44px,10vw,76px); line-height:.95; color:#d6507f; }
 .pj-lead { margin:10px 0 0; max-width:60ch; line-height:1.5; }
