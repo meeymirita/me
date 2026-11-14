@@ -24,6 +24,7 @@ const projects = [
     <div class="layer">
       <div class="jp-l">デベロッパー</div>
       <div class="jp-r">ニキータ</div>
+      <div class="jp-r jp-r2">ニキータ</div>
       <div class="stripes"></div><div class="stripes s2"></div><div class="bar-l"></div><div class="dots-l"></div><div class="lines-l"></div>
 
       <div class="left">
@@ -82,6 +83,7 @@ const projects = [
 .jp-l, .jp-r { writing-mode:vertical-rl; font-family:'Noto Serif JP',serif; letter-spacing:.35em; }
 .jp-l { left:calc(var(--u)*2.8); top:calc(var(--u)*5); font-size:calc(var(--u)*1.3); }
 .jp-r { right:calc(var(--u)*1.2); top:calc(var(--u)*3); font-size:calc(var(--u)*2.1); letter-spacing:.2em; }
+.jp-r2 { top:auto; bottom:calc(var(--u)*1.5); }
 .stripes { left:0; top:calc(var(--u)*19); width:calc(var(--u)*6.5); height:calc(var(--u)*13); background:repeating-linear-gradient(115deg,#241b27 0 calc(var(--u)*.22),transparent calc(var(--u)*.22) calc(var(--u)*.85)); clip-path:polygon(0 0,100% 38%,100% 100%,0 100%); }
 .stripes.s2 { top:calc(var(--u)*33); height:calc(var(--u)*11); width:calc(var(--u)*4.2); opacity:.8; clip-path:polygon(0 0,100% 0,100% 100%,0 100%); background:repeating-linear-gradient(115deg,#241b27 0 calc(var(--u)*.2),transparent calc(var(--u)*.2) calc(var(--u)*.8)); }
 .bar-l { left:0; top:calc(var(--u)*17.5); width:calc(var(--u)*6.5); height:calc(var(--u)*.9); background:#241b27; transform:skewY(-34deg); transform-origin:left; }
@@ -131,7 +133,7 @@ const projects = [
 .about dl { display:grid; grid-template-columns:auto 1fr; gap:.45em .9em; margin:.4em 0 0; font-size:.82em; align-items:center; }
 .about dt { background:#f8e6ee; padding:.25em .6em; border-radius:.5em; font-size:.85em; color:#4b3946; } .about dd { margin:0; }
 
-.now { right:calc(var(--u)*2.5); top:auto; bottom:calc(var(--u)*1.5); width:19.5em; height:6.1em; padding:.9em 1.2em; }
+.now { right:calc(var(--u)*5); top:auto; bottom:calc(var(--u)*1.5); width:19.5em; height:6.1em; padding:.9em 1.2em; }
 .dot { width:.8em; height:.8em; border-radius:50%; background:#3ec26f; }
 .nrow { display:flex; align-items:center; gap:1em; margin-top:.5em; font-size:.8em; } .nrow > img:first-child { width:2em; }
 .nrow .eq { margin-left:auto; height:2.4em; width:auto; }
@@ -160,7 +162,7 @@ const projects = [
   .veil { background:rgba(252,238,243,.78); }
   .layer { position:relative; inset:auto; display:flex; flex-direction:column; gap:16px; padding:28px 16px 40px; max-width:640px; margin:0 auto; }
   .layer > *, .layer > .card { position:relative; left:auto; right:auto; top:auto; bottom:auto; width:auto; height:auto; }
-  .jp-l, .jp-r, .stripes, .bar-l, .dots-l, .lines-l, .num { display:none; }
+  .jp-l, .jp-r, .jp-r2, .stripes, .bar-l, .dots-l, .lines-l, .num { display:none; }
   .left { gap:16px; }
   .title { margin:0; font-size:clamp(44px, 15vw, 84px); }
   .lead { max-width:none; font-size:16px; }
