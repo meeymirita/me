@@ -10,6 +10,7 @@ const about = [
 const projects = [
   { t: 'Korean Platform', d: 'Учебная платформа для изучения корейского', tags: ['Nuxt', 'NestJS', 'Prisma', 'PostgreSQL', 'Redis', 'Docker'], cls: 'p2', href: 'https://korean.meeymirita.ru/' },
   { t: 'Обучающие материалы', d: 'Платформа с уроками и материалами для обучения IT', tags: ['HTML', 'Python', 'Shell', 'JavaScript'], cls: 'p3', href: 'https://anitech.meeymirita.ru/' },
+  { t: 'Feedback Platform', d: 'Платформа ежедневной и недельной отчётности сотрудников', tags: ['NestJS', 'Vue', 'PostgreSQL', 'Docker', 'Caddy'], cls: 'p3', href: 'https://github.com/meeymirita/feedback-platform-klite' },
 ]
 </script>
 
@@ -111,6 +112,7 @@ const projects = [
 .stack li { width:5.4em; text-align:center; font-size:.92em; }
 .stack li img { height:2.8em; width:auto; max-width:4.4em; margin:0 auto .5em; object-fit:contain; }
 
+.left > .projects { width:calc(var(--u)*55.4); }
 .projects { height:auto !important; padding-bottom:.8em !important; height:18.9em; padding:1.1em 1.5em; background:rgba(255,246,249,.55); border-radius:1.2em 1.2em 0 0; }
 .projects header .all { margin-left:auto; display:flex; align-items:center; gap:.4em; font-size:.85em; font-weight:600; color:#d6507f; white-space:nowrap; }
 .projects header .all:hover { text-decoration:underline; }
@@ -169,6 +171,7 @@ const projects = [
   .projects { border-radius:1.2em; }
   .plist { flex-direction:column; }
   .proj { flex:none; }
+  .left > .projects { width:auto; }
   .thumb { height:90px; }
   .proj p { min-height:0; font-size:13px; }
   .about dl { font-size:14px; }
