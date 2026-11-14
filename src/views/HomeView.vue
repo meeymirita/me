@@ -88,8 +88,8 @@ const projects = [
       <p class="lead">Backend-разработчик (Laravel) &nbsp;•&nbsp; Люблю создавать надёжные и удобные сервисы, продумывать архитектуру и превращать идеи в работающие продукты <img class="ic-s" src="/icons/heart.png" alt=""></p>
       <div class="btns"><a class="btn pink" href="https://github.com/meeymirita?tab=repositories" target="_blank" rel="noopener">Мои проекты <span>⟶</span></a>
       <a class="btn ghost" href="/resume.pdf" download="resume.pdf"><img src="/icons/download.png" alt="">Резюме (PDF)</a>
-      <a class="ibtn" href="https://github.com/meeymirita" target="_blank" rel="noopener" aria-label="GitHub"><img src="/icons/github.png" alt=""></a>
-      <a class="ibtn" href="https://t.me/meeymirita" target="_blank" rel="noopener" aria-label="Telegram"><img src="/icons/telegram.png" alt=""></a></div>
+      <a class="ibtn" href="https://github.com/meeymirita" target="_blank" rel="noopener" aria-label="GitHub"><i class="mi" style="--i:url(/icons/github.png)"></i></a>
+      <a class="ibtn" href="https://t.me/meeymirita" target="_blank" rel="noopener" aria-label="Telegram"><i class="mi" style="--i:url(/icons/telegram.png)"></i></a></div>
 
       <section id="stack" class="card stack">
         <header><img src="/icons/code.png" alt=""><b>Мой стек</b>
@@ -171,7 +171,7 @@ const projects = [
 .btns { display:flex; align-items:center; gap:.9em; }
 .ibtn { flex:none; width:2.8em; height:2.8em; border-radius:50%; display:grid; place-items:center; background:rgba(255,255,255,.7); border:1px solid #e3c9d4; box-shadow:0 .4em 1em -.5em rgba(180,90,130,.5); transition:transform .15s, border-color .15s; }
 .ibtn:hover { transform:translateY(-2px); border-color:#d6507f; }
-.ibtn img { width:1.2em; height:1.2em; }
+.ibtn .mi { width:1.2em; height:1.2em; background:#d6507f; -webkit-mask:var(--i) center/contain no-repeat; mask:var(--i) center/contain no-repeat; }
 .btn { display:flex; align-items:center; justify-content:center; gap:.7em; height:2.8em; border-radius:2em; font-size:1em; font-weight:600; }
 .btn.pink { width:12.9em; background:#d6507f; color:#fff; box-shadow:0 .5em 1.2em -.4em rgba(214,80,127,.6); }
 .btn.ghost { width:11.1em; background:rgba(255,255,255,.55); border:1px solid #e3c9d4; font-weight:500; }
