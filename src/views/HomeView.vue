@@ -149,13 +149,33 @@ const projects = [
 .num { right:calc(var(--u)*2); bottom:calc(var(--u)*8); font-family:'Cormorant Garamond',serif; font-style:italic; font-weight:700; font-size:calc(var(--u)*7); font-variant-numeric:lining-nums; color:rgba(190,150,200,.5); }
 
 @media (max-width:960px) {
-  .stage { aspect-ratio:auto; font-size:16px; padding:24px 16px 32px; }
-  .layer { position:relative; transform:none; display:flex; flex-direction:column; gap:16px; }
-  .layer > *, .layer > .card { position:relative; left:auto; top:auto; width:auto; height:auto; }
-  .jp-l, .jp-r, .stripes, .num, .pagoda { display:none; }
-  .title { font-size:52px; } .plist { position:static; flex-direction:column; } .proj { width:auto; }
-  .stack ul { flex-wrap:wrap; gap:12px; } .btn.pink, .btn.ghost { width:auto; padding:0 20px; align-self:flex-start; }
-  .act ul { width:100%; } .stage .bg { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:66% 0%; }
-.veil { background:rgba(252,238,243,.72); }
+  .stage { --u:16px; height:auto; min-height:100dvh; overflow:visible; font-size:16px; }
+  .stage .bg, .veil { position:fixed; }
+  .stage .bg { object-position:66% 0%; }
+  .veil { background:rgba(252,238,243,.78); }
+  .layer { position:relative; inset:auto; display:flex; flex-direction:column; gap:16px; padding:28px 16px 40px; max-width:640px; margin:0 auto; }
+  .layer > *, .layer > .card { position:relative; left:auto; right:auto; top:auto; bottom:auto; width:auto; height:auto; }
+  .jp-l, .jp-r, .stripes, .bar-l, .dots-l, .lines-l, .num { display:none; }
+  .left { gap:16px; }
+  .title { margin:0; font-size:clamp(44px, 15vw, 84px); }
+  .lead { max-width:none; font-size:16px; }
+  .btns { flex-wrap:wrap; }
+  .btn.pink, .btn.ghost { width:auto; padding:0 1.6em; }
+  .stack { height:auto; }
+  .stack ul { flex-wrap:wrap; justify-content:flex-start; gap:12px 8px; }
+  .stack li { width:calc(25% - 6px); min-width:64px; }
+  .stack header { flex-wrap:wrap; }
+  .projects { border-radius:1.2em; }
+  .plist { flex-direction:column; }
+  .proj { flex:none; }
+  .thumb { height:90px; }
+  .proj p { min-height:0; font-size:13px; }
+  .about dl { font-size:14px; }
+  .now { height:auto; }
+  .nrow { font-size:14px; }
+  .about { order:2; } .now { order:3; }
+}
+@media (max-width:380px) {
+  .stack li { width:calc(33.3% - 6px); }
 }
 </style>
