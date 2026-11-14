@@ -8,7 +8,7 @@ const about = [
   ['Локация:', 'Новосибирск, РФ'], ['Формат:', 'Remote / Hybrid'],
 ]
 const projects = [
-  { t: 'Korean Platform', d: 'Учебная платформа для изучения корейского', tags: ['Nuxt', 'NestJS', 'Prisma', 'PostgreSQL', 'Redis', 'Docker'], cls: 'p2', href: 'https://korean.meeymirita.ru/' },
+  { t: 'Korean Platform', d: 'Мягкая платформа для изучения корейского', tags: ['Nuxt', 'NestJS', 'Prisma', 'PostgreSQL', 'Redis', 'Docker'], cls: 'p2', href: 'https://korean.meeymirita.ru/' },
   { t: 'Обучающие материалы', d: 'Платформа с уроками и материалами для обучения IT', tags: ['HTML', 'Python', 'Shell', 'JavaScript'], cls: 'p3', href: 'https://anitech.meeymirita.ru/' },
   { t: 'Feedback Platform', d: 'Платформа ежедневной и недельной отчётности сотрудников', tags: ['NestJS', 'Vue', 'PostgreSQL', 'Docker', 'Caddy'], cls: 'p3', href: 'https://github.com/meeymirita/feedback-platform-klite' },
 ]
